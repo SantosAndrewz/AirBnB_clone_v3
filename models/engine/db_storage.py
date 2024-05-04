@@ -80,11 +80,11 @@ class DBStorage:
         self.__session.remove()
 
     def get(self, cls, id):
-        '''retrieves an object'''
+        """retrieves an object"""
         return self.__session.query(cls).get(id)
 
     def count(self, cls=None):
-        '''counts number of objects in the storage'''
+        """counts number of objects in the storage"""
         if cls:
             return self.__session.query(cls).count()
         else:
