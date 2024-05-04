@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """
-Contains the class DBStorage
+Contains the class DBStorage interacting with the MySQL
+database.
+Attributes:
+    __engine: SQLAlchemy engine object that connects to the database.
+    __session: SQLAlchemy session object that queries the database
 """
 
 import models
